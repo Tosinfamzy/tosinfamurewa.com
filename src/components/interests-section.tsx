@@ -1,19 +1,32 @@
-import { INTERESTS } from '@/data/interests'
+import { PROJECTS, PERSONAL_INTERESTS } from '@/data/interests'
 
 import type { Interest } from '@/data/interests'
 
 export function InterestsSection(): React.ReactElement {
   return (
-    <section>
-      <h2 className="mb-6 font-heading text-xl font-semibold">
-        What I&apos;m working on
-      </h2>
-      <div className="space-y-4">
-        {INTERESTS.map((interest) => (
-          <InterestCard key={interest.title} interest={interest} />
-        ))}
-      </div>
-    </section>
+    <div className="space-y-12">
+      <section>
+        <h2 className="mb-6 font-heading text-xl font-semibold">
+          What I&apos;m building
+        </h2>
+        <div className="space-y-4">
+          {PROJECTS.map((project) => (
+            <InterestCard key={project.title} interest={project} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-6 font-heading text-xl font-semibold">
+          When I&apos;m not coding
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {PERSONAL_INTERESTS.map((interest) => (
+            <InterestTag key={interest.title} interest={interest} />
+          ))}
+        </div>
+      </section>
+    </div>
   )
 }
 
@@ -45,4 +58,19 @@ function InterestCard({ interest }: InterestCardProps): React.ReactElement {
   }
 
   return content
+}
+
+interface InterestTagProps {
+  interest: Interest
+}
+
+function InterestTag({ interest }: InterestTagProps): React.ReactElement {
+  return (
+    <span
+      className="rounded-full border border-border px-3 py-1.5 text-sm transition-colors hover:border-accent/40 hover:bg-surface"
+      title={interest.description}
+    >
+      {interest.title}
+    </span>
+  )
 }

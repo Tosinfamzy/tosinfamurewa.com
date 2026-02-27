@@ -7,6 +7,5 @@ export const SITE_CONFIG = {
   links: {
     github: 'https://github.com/Tosinfamzy',
     linkedin: 'https://linkedin.com/in/tosinfamurewa',
-    email: 'mailto:famurewatosin@gmail.com',
   },
 } as const
