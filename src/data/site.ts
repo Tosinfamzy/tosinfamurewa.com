@@ -6,6 +6,6 @@ export const SITE_CONFIG = {
   url: 'https://tosinfamurewa.com',
   links: {
     github: 'https://github.com/Tosinfamzy',
-    linkedin: 'https://linkedin.com/in/tosinfamurewa',
+    linkedin: 'https://www.linkedin.com/in/oluwatosin-famurewa-7a7754b0/',
   },
 } as const
