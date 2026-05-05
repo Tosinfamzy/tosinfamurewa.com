@@ -20,6 +20,20 @@ export const PROJECTS: Interest[] = [
     link: 'https://games-nightv2-ui.vercel.app',
     type: 'project',
   },
+  {
+    title: 'Animeroll',
+    description:
+      'A personal anime watchlist with shareable, Letterboxd-style cards',
+    link: 'https://animeroll-kappa.vercel.app',
+    type: 'project',
+  },
+  {
+    title: 'Pim Shop',
+    description:
+      'An online bookshop for Pim Wangtechawat\'s poetry collection',
+    link: 'https://pim-shop.vercel.app',
+    type: 'project',
+  },
 ]
 
 export const PERSONAL_INTERESTS: Interest[] = [
