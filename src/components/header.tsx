@@ -15,12 +15,6 @@ export function Header(): React.ReactElement {
           {SITE_CONFIG.name}
         </Link>
         <div className="flex items-center gap-4">
-          <Link
-            href="/writing"
-            className="text-sm text-text-muted transition-colors hover:text-text"
-          >
-            Writing
-          </Link>
           <ThemeToggle />
         </div>
       </nav>

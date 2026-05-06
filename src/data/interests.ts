@@ -9,29 +9,29 @@ export const PROJECTS: Interest[] = [
   {
     title: 'Lifters Club',
     description:
-      'Building a training decision engine for strength athletes',
+      'Not a workout tracker — a training decision engine. Takes your training history and produces seven kinds of next-week calls (load progression, deload, missed-session recovery) with auditable reasoning attached to each. Turborepo across a Hono API, a Next.js web app, and an Expo mobile client.',
     link: 'https://lifters-club.vercel.app',
     type: 'project',
   },
   {
     title: 'Games Night',
     description:
-      'A real-time multiplayer games platform for casual play with friends',
+      'A real-time multiplayer party-games platform — the kind of thing you load on a TV when friends are over. NestJS + WebSockets backend, React/Vite SPA frontend.',
     link: 'https://games-nightv2-ui.vercel.app',
     type: 'project',
   },
   {
     title: 'Animeroll',
     description:
-      'A personal anime watchlist with shareable, Letterboxd-style cards',
+      'A personal anime watchlist that produces shareable, Letterboxd-style cards. Shares are immutable artifacts — a snapshot of cover, score, and status is frozen at link creation, so updating your rating later doesn\'t change what the recipient sees. Next.js 16, Drizzle on Turso (libSQL), Jikan for metadata.',
     link: 'https://animeroll-kappa.vercel.app',
     type: 'project',
   },
   {
     title: 'Pim Shop',
     description:
-      'An online bookshop for Pim Wangtechawat\'s poetry collection',
-    link: 'https://pim-shop.vercel.app',
+      'A single-product Stripe bookshop for Pim Wangtechawat\'s debut poetry collection — All These Poems Are About Love. Lives in a small monorepo with a shared brand package the upcoming author site will reuse.',
+    link: 'https://shop.pimwangtechawat.com',
     type: 'project',
   },
 ]

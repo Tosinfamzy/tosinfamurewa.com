@@ -27,7 +27,7 @@ export default function HomePage(): React.ReactElement {
           </div>
         </div>
         <p className="text-lg leading-relaxed">
-          {SITE_CONFIG.description}
+          {SITE_CONFIG.bio}
         </p>
         <SocialLinks className="pt-2" />
       </section>
